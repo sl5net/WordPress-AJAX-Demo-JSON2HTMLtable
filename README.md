@@ -46,8 +46,8 @@ some sources are direkt from onlne trusted sites:
 * There are only a few functions now, but it already looks a bit like spaghetti :-O
 
 ##### TODO:
-Download QUnit ;) and oter files not use the online javascript.
-Okay for demo it works. 
+Download QUnit library ;) and other files not use the online javascript.
+Okay for demo it works.
   
 ##### BTW:
 I wrote this Plugin this weekend (28.6.2020). this is just my second wordpress plugin I wrote.
