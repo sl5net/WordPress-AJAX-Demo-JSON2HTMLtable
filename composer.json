@@ -1,0 +1,20 @@
+{
+  "name": "WordPress-AJAX-Demo-JSON2HTMLtable",
+  "description": "Simple AJAX-Demo for WordPress",
+  "version": "0.1",
+  "keywords": [
+    "wordpress",
+    "wordpress-plugin"
+  ],
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Seeh",
+      "email": "L∂SL5.de",
+      "homepage": "https://SL5.de"
+    }
+  ],
+  "require": {
+    "php": ">=7.2+"
+  }
+}
