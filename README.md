@@ -40,7 +40,12 @@ some sources are direkt from onlne trusted sites:
 * 3rd party libraries:
   * qunit
   
+##### problems:
+* i not yet read the inpsyde coding style guide: https://github.com/inpsyde/php-coding-standards
+* Qunit is probably not suitable for Ajax tests within WordPress
+* There are only a few functions now, but it already looks a bit like spaghetti :-O
+  
 ##### BTW:
-I wrote this Plugin this weekend. this is just my second wordpress plugin I wrote.
+I wrote this Plugin this weekend (28.6.2020). this is just my second wordpress plugin I wrote.
 
 this README files using Markdown syntax https://guides.github.com/features/mastering-markdown/#syntax
