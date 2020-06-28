@@ -20,28 +20,16 @@ add_filter('the_content', 'cathy_plugin_demo_filter_content');
 function cathy_plugin_demo_filter_content($content)
 {
     $content = '
-//	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-//	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
-
-//<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
 <link rel="stylesheet" href="http://github.com/jquery/qunit/raw/master/qunit/qunit.css" type="text/css" media="screen">
    
 
   <div id="qunit"></div>
     <div id="qunit-fixture"></div>
     <div id="pageTitle"></div>
-//    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
     <script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
     
 <script type="text/javascript">
-
-//https://stackoverflow.com/questions/1836105/how-to-wait-5-seconds-with-jquery
-function wait(ms) {
-    var defer = $.Deferred();
-    setTimeout(function() { defer.resolve(); }, ms);
-    return defer;
-};
 
 // config.current.ignoreGlobalErrors = true;
 
@@ -111,7 +99,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
         <th>Email</th>
         </tr>`; 
         json.forEach(user => { 
-            let urlUserId = `http://jsonplaceholder.typicode.com/posts?userId=${user.id}`;
             li += `<tr> 
                 <td><a onClick="a_onClick(${user.id})">${user.id}</a></td>   
                 <td><a onClick="a_onClick(${user.id})">${user.name}</a></td> 
@@ -128,44 +115,14 @@ fetch("https://jsonplaceholder.typicode.com/users")
 //https://stackoverflow.com/questions/61709585/qunit-testing-ajax-calls
 //https://stackoverflow.com/questions/61682131/setting-up-qunit-tests-for-ajax-calls
 
-//wait(5000) ; 
-   
-   
-   
-function max() {
-   var max = -Infinity;
-   for (var i = 0; i < arguments.length; i++) {
-      if (arguments[i] > max) {
-         max = arguments[i];
-      }
-   }
-
-   return max;
-}
-//   https://www.sitepoint.com/test-asynchronous-code-qunit/
-//TypeError: QUnit.asyncTest is not a function
-QUnit.asyncTest(\'max\', function (assert) {
-   expect(1);
-
-   window.setTimeout(function() {
-      assert.strictEqual(max(3, 1, 2), 3, \'All positive numbers\');
-      QUnit.start();
-   }, 0); 
-});
-
-   
 //MethodName_StateUnderTest_ExpectedBehavior
 QUnit.test(\'userInnerHTML_IsEmpty_onPageReady\', function(assert) {
     let innerHtml = document.getElementById("user").innerHTML;
     assert.equal(innerHtml, "");
 });
 
-
-
 QUnit.test(\'ooo\', function(assert) {
     // Result always 0 
-
-setTimeout(function(){alert("hi")}, 2000);
 
     let innerHTML = document.getElementById("user").innerHTML.toString(); 
     assert.equal(innerHTML, " 5 5 5");
