@@ -41,7 +41,6 @@ some sources are direkt from onlne trusted sites:
   * qunit
   
 ##### problems:
-* i not yet read the inpsyde coding style guide: https://github.com/inpsyde/php-coding-standards
 * Qunit is probably not suitable for Ajax tests within WordPress
 * There are only a few functions now, but it already looks a bit like spaghetti :-O
 
